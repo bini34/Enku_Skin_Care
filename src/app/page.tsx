@@ -5,6 +5,7 @@ export default function Home() {
     <main className="w-full mn-h-[100vh]">
       <section className="h-[100vh] w-full flex justify-center items-center">
         <video
+        
           autoPlay
           loop
           muted
@@ -121,7 +122,7 @@ export default function Home() {
 </section>
 
 <section
-  className="h-[50vh] w-full flex flex-col justify-center items-center bg-black bg-opacity-80 gap-5 py-10"
+  className="h-[70vh] w-full flex flex-col justify-center items-center bg-black bg-opacity-100 gap-5 py-10"
   style={{
     backgroundImage: "url(/images/yh5h5yhb-min.png)",
     backgroundSize: "cover",
@@ -139,7 +140,89 @@ Your skin, your confidence.
               BOOK NOW
             </Link>
       </section>
-      <section className="h-[100vh] w-full">
+      <section
+  className="p-5 sm:p-5 md:p-20 lg:p-40 w-full bg-white flex flex-col gap-10 m-h-[100vh]"
+  style={{
+    backgroundImage: "url(/images/bg.png)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+<div className="w-full flex flex-col justify-center items-center gap-5">
+    <h2 className="text-amber-700">OUR SERVICES    </h2>
+    <h1 className="md:text-2xl lg:text-5xl text-center text-black">
+    With our cutting-edge techniques and advanced cosmetic procedures, we strive to bring out your unique beauty and help you shine.
+
+    </h1>
+  </div>
+  <div className="w-full flex md:flex-row flex-col gap-10  justify-center">
+    <div className="lg:w-[400px] md:w-[200px] w-full  flex flex-col gap-5">
+    <Image
+      src="/images/u6j5h5.png"
+      alt="Foreground"
+      width={400} // Adjusted size for the second image
+      height={150}
+    />
+      <div >
+        <h2 className="lg:text-4xl md:text-3xl text-2xl text-black ">
+        Dermatology
+
+        </h2>
+        <p className="text-black">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur </p>
+      </div>
+      <Link href="/" className=" text-amber-600 text-lg font-semibold tracking-wider">
+              
+DISCOVER
+            </Link>
+ 
+ 
+    </div>
+    <div className="lg:w-[400px] md:w-[200px] w-full mt-20 flex flex-col gap-5">
+    <Image
+      src="/images/u6j5h5.png"
+      alt="Foreground"
+      width={400} // Adjusted size for the second image
+      height={250}
+    />
+      <div >
+        <h2 className="text-4xl text-black ">
+        Dermatology
+
+        </h2>
+        <p className="text-black">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur </p>
+      </div>
+      <Link href="/" className=" text-amber-600 text-lg font-semibold tracking-wider">
+              
+DISCOVER
+            </Link>
+ 
+ 
+    </div>
+    <div className="lg:w-[400px] md:w-[200px] w-full  flex flex-col gap-5">
+    <Image
+      src="/images/u6j5h5.png"
+      alt="Foreground"
+      width={400} // Adjusted size for the second image
+      height={250}
+    />
+      <div >
+        <h2 className="text-4xl text-black ">
+        Dermatology
+
+        </h2>
+        <p className="text-black">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur </p>
+      </div>
+      <Link href="/" className=" text-amber-600 text-lg font-semibold tracking-wider">
+              
+DISCOVER
+            </Link>
+ 
+ 
+    </div>
+  </div>
       
       </section>
     </main>
