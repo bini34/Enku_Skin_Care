@@ -1,5 +1,5 @@
 import Link from "next/link";
-const bg = '/images/bg.png';
+import Image from 'next/image'
 export default function Home() {
   return (
     <main className="w-full h-[100vh]">
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       <section
-        className="p-5 sm:p-5 md:p-10 lg:p-40 w-full bg-white flex flex-col gap-10"
+        className="p-5 sm:p-5 md:p-20 lg:p-40 w-full bg-white flex flex-col gap-10"
         style={{
           backgroundImage: `url(/images/bg.png)`,
           backgroundSize: "cover",
@@ -56,18 +56,51 @@ export default function Home() {
           </h1>
         </div>
         <hr className="text-black" />
-        <div className="w-full flex md:flex-row flex-col gap-10">
-          <div className="w-[50%]"></div>
-          <div className="w-[50%] flex flex-col justify-center items-left gap-5">
-            <h2 className="text-amber-700">ABOUT US</h2>
-            <h1 className="text-2xl md:text-5xl text-left text-black">
+        <div className="w-full flex lg:flex-row flex-col gap-10 l">
+          <div className="lg:w-[50%] w-full"></div>
+          <div className="lg:w-[50%] w-full flex flex-col justify-center gap-5">
+            <h2 className="text-amber-700 lg:text-left text-center">ABOUT US</h2>
+            <h1 className="text-2xl md:text-5xl lg:text-left text-center text-black">
               Where science and beauty collide
             </h1>
-            <p className="text-xl text-black">
+            <p className="text-xl text-black lg:text-left text-center">
               Step into our world and experience the power of transformation.
               Unleash your confidence and embrace your ageless beauty with us.
             </p>
+            <div className="flex gap-5">
+<Image
+src='/images/aroma.png'
+alt="bg"
+width={32}
+height={32}
+/>
+<div>
+<h1 className="text-xl md:text-2xl lg:text-left text-center text-black">
+Advanced laser systems
+            </h1>
+            <p className="text-l text-black lg:text-left text-center">
+            Discover the benefits of our modern cosmetology and dermatology equipment, carefully selected to provide you with the best experience.
+            </p>
+</div>
+            </div>
+            <div className="flex gap-5">
+<Image
+src='/images/aroma.png'
+alt="bg"
+width={32}
+height={32}
+/>
+<div>
+<h1 className="text-xl md:text-2xl lg:text-left text-center text-black">
+Advanced laser systems
+            </h1>
+            <p className="text-l text-black lg:text-left text-center">
+            Discover the benefits of our modern cosmetology and dermatology equipment, carefully selected to provide you with the best experience.
+            </p>
+</div>
+            </div>
           </div>
+          
         </div>
       </section>
 
