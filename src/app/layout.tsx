@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Marcellus } from "next/font/google";
+import {  Marcellus } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const marcellus = Marcellus({
   variable: "--font-marcellus",
@@ -33,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${marcellus.variable} font-marcellus antialiased bg-amber-50 text-black`}
+        className={` ${marcellus.variable} font-marcellus antialiased bg-amber-50 text-black`}
       >
         <Header />
         {children}
