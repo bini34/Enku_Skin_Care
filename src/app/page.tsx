@@ -155,12 +155,15 @@ Your skin, your confidence.
   </div>
   <div className="w-full flex md:flex-row flex-col gap-10  justify-center">
     <div className="lg:w-[400px] md:w-[200px] w-full  flex flex-col gap-5">
-    <Image
+      <div className="w-[51px] h-[51px]">
+      <Image
       src="/images/u6j5h5.png"
       alt="Foreground"
-      width={400} // Adjusted size for the second image
-      height={150}
+      width={51} // Adjusted size for the second image
+      height={51}
     />
+      </div>
+  
       <div >
         <h2 className="lg:text-4xl md:text-3xl text-2xl text-black ">
         Dermatology
@@ -180,8 +183,8 @@ DISCOVER
     <Image
       src="/images/u6j5h5.png"
       alt="Foreground"
-      width={400} // Adjusted size for the second image
-      height={250}
+      width={51} // Adjusted size for the second image
+      height={51}
     />
       <div >
         <h2 className="text-4xl text-black ">
@@ -202,8 +205,8 @@ DISCOVER
     <Image
       src="/images/u6j5h5.png"
       alt="Foreground"
-      width={400} // Adjusted size for the second image
-      height={250}
+      width={51} // Adjusted size for the second image
+      height={51}
     />
       <div >
         <h2 className="text-4xl text-black ">
