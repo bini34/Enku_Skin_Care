@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function page() {
-  return (
-    <main>
-      reservation
-    </main>
-  )
+  return <main>reservation</main>;
 }
 
-export default page
+export default page;
