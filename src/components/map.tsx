@@ -1,14 +1,14 @@
 'use client';
 
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
 import { LatLngExpression } from 'leaflet';
 
-const SetView = ({ center, zoom }: { center: LatLngExpression; zoom: number }) => {
-  const map = useMap();
-  map.setView(center, zoom);
-  return null;
-};
+// Dynamically import MapContainer and related components
+const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
+const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
+const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
+const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 
 export default function ShopMap() {
   // Shop's location (replace with your shop's actual coordinates)
@@ -17,11 +17,12 @@ export default function ShopMap() {
   return (
     <MapContainer
       style={{ height: '400px', width: '100%' }}
+      center={shopLocation}
+      zoom={15}
     >
-      <SetView center={shopLocation} zoom={50} />
       <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="&copy; OpenStreetMap contributors"
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+        attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/'>CARTO</a>"
       />
       <Marker position={shopLocation}>
         <Popup>
