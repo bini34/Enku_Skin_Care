@@ -30,14 +30,14 @@ function page() {
           backgroundPosition: 'center',
         }}
       ></section>
-      <section className="w-full m-h-[100vh] flex  p-30 gap-10">
-        <div className="w-[50%] m-h-[100vh] border-2 border-amber-600 p-20 flex flex-col gap-10">
+      <section className="w-full m-h-[100vh] flex md:flex-row flex-col  p-30 gap-10">
+        <div className="md:w-[50%] w-full m-h-[100vh] border-2 border-amber-600 p-20 flex flex-col gap-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl text-left text-black">Reach out to us</h1>
-<p className="text-left text-xl">We’re here to answer your cosmetology and dermatology questions</p>
+          <p className="text-left text-xl">We’re here to answer your cosmetology and dermatology questions</p>
           <ContactForm />
         </div>
         
-        <div className="w-[50%] m-h-[100vh]"  style={{
+        <div className="md:w-[50%] w-full m-h-[100vh]"  style={{
           backgroundImage: 'url(/images/57mun75.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
