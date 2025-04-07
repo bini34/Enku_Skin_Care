@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactForm from '@/components/contact-form';
-import Image from 'next/image';
 import Link from 'next/link';
 import ShopMap from '@/components/map';
 
